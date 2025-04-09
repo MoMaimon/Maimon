@@ -10,7 +10,7 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100vh);
     background: rgba(0, 0, 0, 0.8);
     z-index: -1; }
 
@@ -76,9 +76,11 @@ body {
   align-items: center; }
   .about-main .idk h2 {
     margin-left: 10px; }
+  .about-main .idk span {
+    color: #2e1961; }
   .about-main .idk a {
     text-decoration: none;
-    color: green; }
+    color: #00a652; }
 
 .ubuntu-light {
   font-family: "Ubuntu", sans-serif;
