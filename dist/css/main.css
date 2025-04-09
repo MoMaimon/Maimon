@@ -1,8 +1,9 @@
 body {
   background: url("../images/bg.png");
   background-size: cover;
-  background-attachment: fixed;
-  overflow: hidden; }
+  background-attachment: fixed; }
+  body#home-body {
+    overflow: hidden; }
   body::after {
     content: "";
     position: absolute;
@@ -38,7 +39,9 @@ body {
   color: #fefffe;
   height: 100vh;
   padding: 3rem 10vw; }
-  .main a {
+  .main .primary-text {
+    font-size: clamp(4rem, 10vw, 10rem); }
+  .main .about-btn {
     display: block;
     margin-top: 50px;
     text-align: center;
@@ -47,11 +50,35 @@ body {
     padding: 20px 10px;
     border-radius: 35px;
     text-decoration: none; }
-    .main a h3 {
+    .main .about-btn h3 {
       color: #fefffe; }
 
 .secondary-text {
   color: #2e1961; }
+
+.about-main .bg-overlay {
+  background: rgba(254, 255, 254, 0.05);
+  border-radius: 10px;
+  padding: 20px; }
+
+.about-main .profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: solid 3px #2e1961; }
+  .about-main .profile-img img {
+    width: 200px; }
+
+.about-main .idk {
+  display: flex;
+  align-items: center; }
+  .about-main .idk h2 {
+    margin-left: 10px; }
+  .about-main .idk a {
+    text-decoration: none;
+    color: green; }
 
 .ubuntu-light {
   font-family: "Ubuntu", sans-serif;
@@ -71,8 +98,7 @@ body {
 .ubuntu-bold {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
-  font-style: normal;
-  font-size: clamp(4rem, 10vw, 10rem); }
+  font-style: normal; }
 
 .ubuntu-light-italic {
   font-family: "Ubuntu", sans-serif;

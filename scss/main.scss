@@ -4,7 +4,10 @@ body{
     background: $main-bg-img;
     background-size: cover;
     background-attachment: fixed;
-    overflow: hidden;
+    
+    &#home-body{
+        overflow: hidden;
+    }
     &::after{
         content: "";
         position: absolute;
@@ -52,7 +55,10 @@ body{
     // background: #000;
     height: 100vh;
     padding: 3rem 10vw;
-    a{
+    .primary-text{
+        font-size: clamp(4rem ,10vw,10rem);
+    }
+    .about-btn{
         display: block;
         margin-top: 50px;
         text-align: center;
@@ -71,6 +77,42 @@ body{
 .secondary-text{
     color: $secondary-color;
 }
+
+
+
+
+
+// about page
+.about-main{
+    .bg-overlay{
+        background: rgba($primary-color, $alpha: .05);
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .profile-img{
+        width: $profile-pic-size;
+        height: $profile-pic-size;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 1rem;
+        border: solid 3px $secondary-color;
+        img{  
+            width: $profile-pic-size;
+        }
+    }
+    .idk{
+        display: flex;
+        align-items: center;
+        h2{
+            margin-left: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: green;
+        }
+    }
+}
+
 
 
 
@@ -98,7 +140,7 @@ body{
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: clamp(4rem ,10vw,10rem);
+    
   }
   
   .ubuntu-light-italic {
