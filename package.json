@@ -4,11 +4,13 @@
   "description": "my personal portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "mohammad maimoun",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "node-sass": "^9.0.0"
   }
 }
