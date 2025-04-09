@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "my personal portfolio",
   "main": "index.js",
+  "homepage": "https://MoMaimon.github.io/Maimon",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
