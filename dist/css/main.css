@@ -8,7 +8,11 @@
     .nav-bar a {
       font-size: 1rem !important; }
   .main .primary-text {
-    font-size: 2rem !important; } }
+    font-size: 2.3rem !important; }
+  .main .about-btn {
+    width: 100px !important; }
+    .main .about-btn h3 {
+      font-size: 1rem; } }
 
 body {
   background: url("../images/bg.png");
@@ -16,6 +20,15 @@ body {
   background-attachment: fixed; }
   body#home-body {
     overflow: hidden; }
+  body::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: -1; }
 
 * {
   padding: 0;
@@ -30,7 +43,7 @@ body {
   gap: 7rem; }
   .nav-bar .nav-item a {
     text-decoration: none;
-    color: #2e1961;
+    color: #563d8f;
     font-size: 1.5rem; }
     .nav-bar .nav-item a.current {
       color: #fefffe; }
@@ -47,7 +60,7 @@ body {
     display: block;
     margin-top: 50px;
     text-align: center;
-    background: rgba(46, 25, 97, 0.9);
+    background: rgba(86, 61, 143, 0.9);
     width: 130px;
     padding: 20px 10px;
     border-radius: 35px;
@@ -56,7 +69,7 @@ body {
       color: #fefffe; }
 
 .secondary-text {
-  color: #2e1961; }
+  color: #563d8f; }
 
 .about-main {
   display: flex;
@@ -73,7 +86,7 @@ body {
       .about-main .personal-cotact-container .contact-me h2 {
         font-size: 2rem; }
       .about-main .personal-cotact-container .contact-me .contact-container {
-        border: solid 3px #2e1961;
+        border: solid 3px #563d8f;
         border-radius: 10px;
         display: grid;
         padding: 2rem;
@@ -84,7 +97,7 @@ body {
           all: unset;
           cursor: pointer; }
           .about-main .personal-cotact-container .contact-me .contact-container a:hover {
-            color: #2e1961; }
+            color: #563d8f; }
         .about-main .personal-cotact-container .contact-me .contact-container .i {
           grid-area: item;
           font-size: 5rem; }
@@ -98,7 +111,7 @@ body {
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 1rem;
-    border: solid 3px #2e1961; }
+    border: solid 3px #563d8f; }
     .about-main .profile-img img {
       width: 200px; }
   .about-main .idk {
@@ -107,7 +120,7 @@ body {
     .about-main .idk h2 {
       margin-left: 10px; }
     .about-main .idk span {
-      color: #2e1961; }
+      color: #563d8f; }
     .about-main .idk a {
       text-decoration: none;
       color: #00a652; }

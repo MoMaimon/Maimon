@@ -9,16 +9,16 @@ body{
     &#home-body{
         overflow: hidden;
     }
-    // &::after{
-    //     content: "";
-    //     position: absolute;
-    //     left: 0;
-    //     top: 0;
-    //     width: 100%;
-    //     height: calc(100vh); // TODO fix this ti fit all page 
-    //     background: rgba(#000, .8); // bg overlay 
-    //     z-index: -1;
-    // }
+    &::after{
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        min-height: 100%; // TODO fix this ti fit all page 
+        background: rgba(#000, .9); // bg overlay 
+        z-index: -1;
+    }
 }
 
 *{
