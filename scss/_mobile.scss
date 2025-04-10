@@ -7,12 +7,23 @@
 }
 // 768px
 @include mediaMd{
-    
+    .personal-cotact-container{
+        flex-wrap: wrap;
+    }
 }
 // 500px
 @include mediaSm{
     .nav-bar{
         gap: 3.5rem !important;
-        background: #cc5656;
+        a{
+            font-size: 1rem !important;
+        }
+        
+
+    }
+    .main{
+        .primary-text{
+           font-size: 2rem !important; 
+        }
     }
 }
