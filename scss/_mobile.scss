@@ -1,0 +1,18 @@
+@include mediaXl{
+
+}
+
+@include mediaLg{
+    
+}
+// 768px
+@include mediaMd{
+    
+}
+// 500px
+@include mediaSm{
+    .nav-bar{
+        gap: 3.5rem !important;
+        background: #cc5656;
+    }
+}
