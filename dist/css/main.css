@@ -56,31 +56,58 @@ body {
 .secondary-text {
   color: #2e1961; }
 
-.about-main .bg-overlay {
-  background: rgba(254, 255, 254, 0.05);
-  border-radius: 10px;
-  padding: 20px; }
-
-.about-main .profile-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 1rem;
-  border: solid 3px #2e1961; }
-  .about-main .profile-img img {
-    width: 200px; }
-
-.about-main .idk {
+.about-main {
   display: flex;
-  align-items: center; }
-  .about-main .idk h2 {
-    margin-left: 10px; }
-  .about-main .idk span {
-    color: #2e1961; }
-  .about-main .idk a {
-    text-decoration: none;
-    color: #00a652; }
+  flex-direction: column; }
+  .about-main .personal-cotact-container {
+    display: flex; }
+    .about-main .personal-cotact-container .contact-me {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .about-main .personal-cotact-container .contact-me h2 {
+        font-size: 1.9rem; }
+      .about-main .personal-cotact-container .contact-me .contact-container {
+        border: solid 3px #2e1961;
+        border-radius: 10px;
+        display: grid;
+        padding: 2rem;
+        grid-template-areas: 'item item' 'item item';
+        justify-content: center;
+        gap: 2rem; }
+        .about-main .personal-cotact-container .contact-me .contact-container a {
+          all: unset;
+          cursor: pointer; }
+          .about-main .personal-cotact-container .contact-me .contact-container a:hover {
+            color: #2e1961; }
+        .about-main .personal-cotact-container .contact-me .contact-container .i {
+          grid-area: item;
+          font-size: 5rem; }
+  .about-main .bg-overlay {
+    background: rgba(254, 255, 254, 0.05);
+    border-radius: 10px;
+    padding: 20px; }
+  .about-main .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border: solid 3px #2e1961; }
+    .about-main .profile-img img {
+      width: 200px; }
+  .about-main .idk {
+    display: flex;
+    align-items: center; }
+    .about-main .idk h2 {
+      margin-left: 10px; }
+    .about-main .idk span {
+      color: #2e1961; }
+    .about-main .idk a {
+      text-decoration: none;
+      color: #00a652; }
 
 .ubuntu-light {
   font-family: "Ubuntu", sans-serif;

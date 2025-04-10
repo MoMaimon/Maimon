@@ -84,6 +84,44 @@ body{
 
 // about page
 .about-main{
+    display: flex;
+    flex-direction: column;
+    .personal-cotact-container{
+        display: flex;
+        .contact-me{
+            width: 100%;
+            // background: #ff3939;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2{
+                font-size: 1.9rem;
+            }
+            .contact-container{
+                border: solid 3px $secondary-color;
+                border-radius: 10px;
+                display: grid;
+                padding: 2rem;
+                grid-template-areas: 
+                'item item'
+                'item item';
+                justify-content: center;
+                gap: 2rem;
+                a{
+                    all:unset;
+                    cursor: pointer;
+                    &:hover{
+                        color: $secondary-color;
+                    }
+                }
+                .i{
+                    grid-area: item;
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
     .bg-overlay{
         background: rgba($primary-color, $alpha: .05);
         border-radius: 10px;
