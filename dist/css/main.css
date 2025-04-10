@@ -60,7 +60,8 @@ body {
   display: flex;
   flex-direction: column; }
   .about-main .personal-cotact-container {
-    display: flex; }
+    display: flex;
+    gap: 3rem; }
     .about-main .personal-cotact-container .contact-me {
       width: 100%;
       display: flex;
@@ -68,7 +69,7 @@ body {
       justify-content: center;
       align-items: center; }
       .about-main .personal-cotact-container .contact-me h2 {
-        font-size: 1.9rem; }
+        font-size: 2rem; }
       .about-main .personal-cotact-container .contact-me .contact-container {
         border: solid 3px #2e1961;
         border-radius: 10px;
@@ -108,6 +109,40 @@ body {
     .about-main .idk a {
       text-decoration: none;
       color: #00a652; }
+  .about-main .skills-section {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem; }
+    .about-main .skills-section .skill {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px; }
+    .about-main .skills-section .scroller {
+      margin-top: 10px;
+      border-bottom: solid 3px #fefffe;
+      width: 100%;
+      padding-block: 15px;
+      -webkit-mask-image: linear-gradient(90deg, transparent, white, white, transparent);
+      overflow: hidden; }
+      .about-main .skills-section .scroller .inner-scroller {
+        width: max-content;
+        display: flex;
+        gap: 2rem;
+        animation: scroll var(--_animation_speed, 50s) var(--_animation_direction, forwards) infinite linear;
+        animation-delay: var(--_animation_delay, 0s); }
+      .about-main .skills-section .scroller[data-direction="left"] {
+        --_animation_direction:reverse;
+        --_animation_delay:.5s
+            ; }
+      .about-main .skills-section .scroller[data-speed="fast"] {
+        --_animation_speed:30s; }
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 1rem)); } }
 
 .ubuntu-light {
   font-family: "Ubuntu", sans-serif;

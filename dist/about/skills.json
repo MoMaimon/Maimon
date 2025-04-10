@@ -1,0 +1,51 @@
+[
+    {
+        "name":"HTML",
+        "icon_class":"fa-brands fa-html5 fa-xs"
+    },
+    {
+        "name":"CSS",
+        "icon_class":"fa-brands fa-css3-alt fa-xs"
+    },
+    {
+        "name":"JAVASCRIPT",
+        "icon_class":"fa-brands fa-js fa-xs"
+    },
+    {
+        "name":"PYTHON",
+        "icon_class":"fa-brands fa-python fa-xs"
+    },
+    {
+        "name":"REACT",
+        "icon_class":"fa-brands fa-react fa-xs"
+    },
+    {
+        "name":"GIT",
+        "icon_class":"fa-brands fa-git-alt fa-xs"
+    },
+    {
+        "name":"BOOTSTRAP",
+        "icon_class":"fa-brands fa-bootstrap fa-xs"
+    },
+    {
+        "name":"SQL",
+        "icon_class":"fa-solid fa-database fa-xs"
+    },
+    {
+        "name":"NODE JS",
+        "icon_class":"fa-brands fa-node-js fa-xs"
+    },
+    {
+        "name":"ANDROID STUDIO",
+        "icon_class":"fa-brands fa-android fa-xs"
+    },
+    {
+        "name":"ANGULAR",
+        "icon_class":"fa-brands fa-angular fa-xs"
+    },
+    {
+        "name":"UNITY",
+        "icon_class":"fa-brands fa-unity fa-xs"
+    }
+    
+]
