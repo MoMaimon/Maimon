@@ -15,7 +15,7 @@ body{
         left: 0;
         top: 0;
         width: 100%;
-        min-height: 100%; // TODO fix this ti fit all page 
+        min-height: 100%;
         background: rgba(#000, .9); // bg overlay 
         z-index: -1;
     }
@@ -42,10 +42,11 @@ body{
                 color: $primary-color;
             }
             &:hover{
-                text-shadow: 
-                    0 0 7px #fff,
-                    0 0 10px #3a2b5e
-                ; 
+                // text-shadow: 
+                //     0 0 7px #fff,
+                //     0 0 10px #3a2b5e
+                // ; 
+                color: darken($primary-color, $amount: .7);
             }
         }
         
@@ -183,6 +184,10 @@ body{
                 gap: 2rem;
                 animation: scroll var(--_animation_speed,50s) var(--_animation_direction,forwards)  infinite linear;
                 animation-delay: var(--_animation_delay,0s); // TODO add hover stop animation
+
+                &:hover{
+                    animation-play-state: paused;
+                }
                 
             }
             &[data-direction="left"]{

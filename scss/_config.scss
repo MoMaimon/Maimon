@@ -25,3 +25,11 @@ $profile-pic-size:200px;
         @content;
     }
 }
+
+@function set_animation_direction($direction){
+    @if($direction = forwards){
+        @return reverse;
+    } @else{
+        @return forwards;
+    }
+}

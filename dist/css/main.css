@@ -48,7 +48,7 @@ body {
     .nav-bar .nav-item a.current {
       color: #fefffe; }
     .nav-bar .nav-item a:hover {
-      text-shadow: 0 0 7px #fff, 0 0 10px #3a2b5e; }
+      color: #fafffa; }
 
 .main {
   color: #fefffe;
@@ -148,6 +148,8 @@ body {
         gap: 2rem;
         animation: scroll var(--_animation_speed, 50s) var(--_animation_direction, forwards) infinite linear;
         animation-delay: var(--_animation_delay, 0s); }
+        .about-main .skills-section .scroller .inner-scroller:hover {
+          animation-play-state: paused; }
       .about-main .skills-section .scroller[data-direction="left"] {
         --_animation_direction:reverse;
         --_animation_delay:.5s
