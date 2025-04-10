@@ -14,7 +14,7 @@ body{
         left: 0;
         top: 0;
         width: 100%;
-        height: calc(100vh);
+        height: calc(100vh); // TODO fix this ti fit all page 
         background: rgba(#000, .8); // bg overlay 
         z-index: -1;
     }
@@ -171,15 +171,16 @@ body{
             border-bottom: solid 3px $primary-color;
             width: 100%;
             padding-block: 15px;
-            -webkit-mask-image: linear-gradient(90deg,transparent, white ,white,transparent);
-            // mask-image: linear-gradient(black, transparent);
+            mask-image: linear-gradient(90deg,transparent, white ,white,transparent);
+            // -webkit-mask-image: linear-gradient(90deg,transparent, white ,white,transparent);
+            
             overflow: hidden;
             .inner-scroller{
                 width: max-content;
                 display: flex;
                 gap: 2rem;
                 animation: scroll var(--_animation_speed,50s) var(--_animation_direction,forwards)  infinite linear;
-                animation-delay: var(--_animation_delay,0s);
+                animation-delay: var(--_animation_delay,0s); // TODO add hover stop animation
                 
             }
             &[data-direction="left"]{
@@ -191,6 +192,18 @@ body{
             }
         }
         
+    }
+
+    .experiance{
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        padding-bottom: 3rem;
+        h2{
+            font-size: 2rem;  // TODO add an experiance cards
+        }
     }
 }
 

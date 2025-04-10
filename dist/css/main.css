@@ -125,7 +125,7 @@ body {
       border-bottom: solid 3px #fefffe;
       width: 100%;
       padding-block: 15px;
-      -webkit-mask-image: linear-gradient(90deg, transparent, white, white, transparent);
+      mask-image: linear-gradient(90deg, transparent, white, white, transparent);
       overflow: hidden; }
       .about-main .skills-section .scroller .inner-scroller {
         width: max-content;
@@ -139,6 +139,15 @@ body {
             ; }
       .about-main .skills-section .scroller[data-speed="fast"] {
         --_animation_speed:30s; }
+  .about-main .experiance {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding-bottom: 3rem; }
+    .about-main .experiance h2 {
+      font-size: 2rem; }
 
 @keyframes scroll {
   to {
